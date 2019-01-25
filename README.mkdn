@@ -4,7 +4,7 @@
 
 ```bash
 # Initialize local repository
-repo init -u https://github.com/future-os/manifest -b pie
+repo init -u https://github.com/Sankarpspk/manifest-1 -b pie
 ```
 
 ```bash
