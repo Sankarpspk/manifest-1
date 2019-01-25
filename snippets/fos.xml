@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote name="fos"
+          fetch="https://github.com/future-os"
+          revision="pie" />
+
+  <!-- General repos -->
+  <project path="build/make" name="build" remote="fos">
+     <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="fos">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <!--<project path="bionic" name="android_bionic" remote="fos" />-->
+  
+   <!-- Framework repos
+  <project path="frameworks/av" name="android_frameworks_av" remote="fos" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="fos" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="fos" /> -->
+  
+    <!-- Future vendor repos -->
+  <project path="vendor/future" name="vendor_FOS" remote="fos" />
+  
+    <!-- Hardware repos -->
+  <project path="hardware/ril-caf" name="android_hardware_qcom_ril" remote="fos" />
+  <project path="hardware/future/telephony" name="hardware_future_telephony" remote="fos" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="fos" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="fos" />
+  
+    <!-- Packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="fos" />
+  
+</manifest>
