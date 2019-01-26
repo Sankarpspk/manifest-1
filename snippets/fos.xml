@@ -5,7 +5,7 @@
           fetch="https://github.com/future-os"
           revision="pie" />
 
-  <!-- General repos -->
+  <!-- General repos 
   <project path="build/make" name="build" remote="fos">
      <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
