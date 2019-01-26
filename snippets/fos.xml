@@ -19,7 +19,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <!--<project path="bionic" name="android_bionic" remote="fos" />-->
+  <project path="bionic" name="android_bionic" remote="fos" />-->
   
    <!-- Framework repos
   <project path="frameworks/av" name="android_frameworks_av" remote="fos" />
