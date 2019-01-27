@@ -9,7 +9,7 @@ repo init -u https://github.com/Sankarpspk/manifest-1 -b pie
 
 ```bash
 # Sync
-repo sync -c -f -j8 --force-sync --no-clone-bundle
+repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 ```
 
 ### Build ###
